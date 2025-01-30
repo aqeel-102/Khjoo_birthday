@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 export default function BirthdayPage() {
   const [showMessage, setShowMessage] = useState(false);
@@ -180,9 +181,10 @@ export default function BirthdayPage() {
         <div className={styles.photoSection}>
           <div className={styles.photoFrame}>
             <img 
-              src="/your-photo.jpg" 
-              alt="Our memories" 
+              src="/mem.JPG"
+              alt="Our memories"
               className={styles.photo}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
             <div className={styles.photoOverlay}>Our Beautiful Memories ❤️</div>
           </div>
